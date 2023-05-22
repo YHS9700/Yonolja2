@@ -89,7 +89,7 @@ $(document)
 	})
 })
 
-function loadData() {// 테스트용 주석달기2
+function loadData() {// 테스트용 주석달기2llll
 	$.ajax(
 		{
 		url:'/test', 
