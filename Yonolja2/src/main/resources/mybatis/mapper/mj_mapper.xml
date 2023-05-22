@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.human.springboot.mj_DAO">
+	
+	<insert id="addData">
+		insert into test_yonolja values(#{param1},#{param2})
+	</insert>
+	
+	<delete id="deleteData">
+		delete from test_yonolja where name=#{param1} and data=#{param2}
+	</delete>
+	
+	<update id="updateData">
+		update test_yonolja set data=#{param2} where name=#{param1}
+	</update>
+	
+	<select id="getData" resultType="com.human.springboot.mj_DTO">
+		select * from test_yonolja
+	</select>
+	
+	
+	
+	
+	<select id="getBooks" resultType="com.human.springboot.mj_bookDTO">
+		select * from roomz where room_seq=#{param1}
+	</select>
+	
+	
+	
+	
+	
+</mapper>
+
+
+
+
+
+
+
