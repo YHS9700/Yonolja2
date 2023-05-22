@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-/mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.human.springboot.DAO">
+	<select id="test" resultType="com.human.springboot.DTO">
+		select name, data from test_yonolja
+	</select>
+	
+	<insert id="insert">
+		insert into test_yonolja(name, data) values(#{param1}, #{param2})
+	</insert>
+</mapper>
